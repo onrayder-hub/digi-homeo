@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Digital Homeo Consultancy</title>
+
+<style>
+body { font-family: Arial; margin:0; background:#f4f9f4; text-align:center; }
+
+header {
+  background: url('background.jpg') no-repeat center center/cover;
+  color: white;
+  text-align: center;
+  padding: 160px 40px;
+  position: relative;
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* dark overlay */
+}
+
+header h1, header p {
+  position: relative;
+  z-index: 1;
+}
+
+.card {
+  background:white;
+  padding:20px;
+  margin:20px auto;
+  width:280px;
+  border-radius:10px;
+  box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+img {
+  width:120px;
+  height:120px;
+  border-radius:50%;
+  object-fit:cover;
+}
+
+button {
+  padding:10px 15px;
+  background:#2e7d32;
+  color:white;
+  border:none;
+  border-radius:5px;
+  cursor:pointer;
+}
+
+.testimonial {
+  background:white;
+  margin:20px auto;
+  padding:20px;
+  width:80%;
+  border-radius:10px;
+  box-shadow:0 0 8px rgba(0,0,0,0.1);
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+<h1>🌿 Digital Homeo Consultancy</h1>
+<p> Homeopathy Care, Now Just a Click Away.</p>
+</header>
+
+<h2>Our Doctors</h2>
+
+<style>
+.doctor-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap; /* makes it responsive on mobile */
+}
+
+.doctor-card {
+  background: white;
+  padding: 20px;
+  width: 260px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.doctor-card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+button {
+  padding: 10px 15px;
+  background: #2e7d32;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+</style>
+
+<div class="doctor-container">
+
+  <!-- Doctor 1 -->
+  <div class="doctor-card">
+    <img src="doctor1.jpg">
+    <h3>Dr. Ram Sahayi</h3>
+
+    <a href="https://wa.me/919169727365?text=Hello%20I%20want%20consultation%20with%20Dr%20Ram%20Sahayi" target="_blank">
+      <button>Book  on Whatsapp</button>
+    </a>
+
+    <br><br>
+
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSc4Cn1RAy0_QArnNXG7Ofl8neqg4__WlMm-uoyAXko4DT7TKA/viewform?usp=dialog" target="_blank">
+      <button>Patient Detail Form</button>
+    </a>
+  </div>
+
+  <!-- Doctor 2 -->
+  <div class="doctor-card">
+    <img src="doctor2.jpg">
+    <h3>Dr. Ranjana Vishwakarma</h3>
+
+    <a href="https://wa.me/919169727365?text=Hello%20I%20want%20consultation%20with%20Dr%20Ranjana%20Vishwakarma" target="_blank">
+      <button>Book  on Whatsapp</button>
+    </a>
+
+    <br><br>
+
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSc4Cn1RAy0_QArnNXG7Ofl8neqg4__WlMm-uoyAXko4DT7TKA/viewform?usp=dialog" target="_blank">
+      <button>Patient Detail Form</button>
+    </a>
+  </div>
+
+  <!-- Doctor 3 -->
+  <div class="doctor-card">
+    <img src="doctor3.jpg">
+    <h3>Dr. Vipin Sharma</h3>
+
+    <a href="https://wa.me/919169727365?text=Hello%20I%20want%20consultation%20with%20Dr%20Vipin%20Sharma" target="_blank">
+      <button>Book on Whatsapp</button>
+    </a>
+
+    <br><br>
+
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSc4Cn1RAy0_QArnNXG7Ofl8neqg4__WlMm-uoyAXko4DT7TKA/viewform?usp=dialog" target="_blank">
+      <button>Patient Detail Form</button>
+    </a>
+  </div>
+
+</div>
+
+<h2>About Our Doctors</h2>
+
+<style>
+.dropdown {
+  background: white;
+  width: 80%;
+  margin: 15px auto;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+.dropdown-btn {
+  background: #2e7d32;
+  color: white;
+  padding: 15px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  padding: 15px;
+  text-align: left;
+  background: #f9f9f9;
+}
+</style>
+
+<script>
+function toggleDropdown(id) {
+  var x = document.getElementById(id);
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+
+<!-- Doctor 1 -->
+<div class="dropdown">
+<button class="dropdown-btn" onclick="toggleDropdown('doc1')">
+Dr. Ram Sahayi ▼
+</button>
+
+<div id="doc1" class="dropdown-content">
+<p><strong>Academics:</strong> B.SC, BHMS, M.D., SCPH(United Nation), Retd. Prof.(Dept. Of Medicine) in Govt. NHMC, Lucknow			</p>
+<p><strong>Specialisation:</strong> Cerebral Palsy, Mental Retardness, Chronic Renal Failure, Obesity, Psorasis, Eczema, Piles, Warts, Allergies, Hair Fall, Heart Disease,  Chronic Diseases, Skin Problems, </p>
+<p><strong>Contact:</strong> +91 8127326644</p>
+<p><strong>Clinic:</strong> E-2/728, Vineet Khand-2, Gomti Nagar Lucknow, U.P.</p>
+</div>
+</div>
+
+<!-- Doctor 2 -->
+<div class="dropdown">
+<button class="dropdown-btn" onclick="toggleDropdown('doc2')">
+Dr. Ranjana Vishwakarma ▼
+</button>
+
+<div id="doc2" class="dropdown-content">
+<p><strong>Academics:</strong> B.SC, BHMS, M.D.		</p>
+<p><strong>Specialisation:</strong> Women Health, Hair & Skin</p>
+<p><strong>Contact:</strong> +91 123456789876</p>
+<p><strong>Clinic:</strong> Posted as Medical Officer in Ghosi, Dist.- Mau, U.P.</p>
+</div>
+</div>
+
+<!-- Doctor 3 -->
+<div class="dropdown">
+<button class="dropdown-btn" onclick="toggleDropdown('doc3')">
+Dr. Vipin Sharma ▼
+</button>
+
+<div id="doc3" class="dropdown-content">
+<p><strong>Academics:</strong> MBBS	</p>
+<p><strong>Specialisation:</strong> General Surgeon, Allergy, Asthma, Digestive Disorders</p>
+<p><strong>Contact:</strong> +91 9169727365</p>
+<p><strong>Clinic:</strong> Town- Kuri Bazar, Shikariganj, Dist- Gorakhpur, U.P.</p>
+</div>
+</div>
+
+<script>
+function toggleDropdown(id) {
+  let all = document.getElementsByClassName("dropdown-content");
+  for (let i = 0; i < all.length; i++) {
+    if (all[i].id !== id) {
+      all[i].style.display = "none";
+    }
+  }
+
+  let x = document.getElementById(id);
+  x.style.display = (x.style.display === "block") ? "none" : "block";
+}
+</script>
+
+
+
+<h2>Our Clinic Location</h2>
+
+<div style="width:100%; max-width:400px; margin:auto;">
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4112.723331920747!2d81.00298474343016!3d26.849098819832935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399be2e658bdd5d7%3A0x9c4f11ef0a799d11!2sPragya%20Homeopathic%20Nidan%20%26%20Research!5e0!3m2!1sen!2sin!4v1776408558220!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+
+</body>
+</html>
